@@ -1,0 +1,79 @@
+/*
+Theme Name: XSHOP | Multipurpose WooCommerce Theme
+Theme URI: http://themeforest.net/user/take-themes
+Description: A WordPress Theme
+Author: Dev team of take-themes
+Author URI: http://themeforest.net/user/take-themes
+Version: 1.0
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags:one-column, two-columns, left-sidebar, right-sidebar, fixed-layout, fluid-layout , custom-background, custom-colors, custom-menu, featured-image-header, featured-images, post-formats, sticky-post, theme-options, translation-ready
+*/
+
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.gallery-caption{}
+.bypostauthor{}
+
+/* =============================
+		Woocommerce Styles
+================================ */
+.woocommerce a.added_to_cart {
+    position: absolute;
+    bottom: 0;
+    right: 110px;
+    margin-left: -28px;
+    z-index: 9999;
+    color: #fff;
+    line-height: 46px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Hind Siliguri';
+}
+a.ajax_add_to_cart.alt.add_to_cart_button.product_type_simple.added:hover i,
+a.ajax_add_to_cart.alt.add_to_cart_button.product_type_simple.added i {
+    background-color: #0d7d0d;
+}
+/*a.ajax_add_to_cart.alt.add_to_cart_button.product_type_simple.loading {
+    background-image: url('assets/img/loading.gif');
+}*/
+.woocommerce a.add_to_cart_button.loading:after {
+    color: #f2f2f2;
+    font-family: WooCommerce;
+    content: "\e01c";
+    vertical-align: top;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    position: absolute;
+    top: .618em;
+    right: 60px;
+    -webkit-animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+.products.products-grid li.col-md-4.col-md-6.grid-item {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -3px;
+}
+.category-widget ul li a {
+    text-transform: none;
+}
+.woocommerce ul.cart_list li img, .woocommerce ul.product_list_widget li img {
+    width: 74px;
+    height: 68px;
+    overflow: hidden;
+    float: left;
+    margin-right: 10px;
+}
+.woocommerce ul.cart_list li .star-rating {
+    display: none;
+}
+.home2-product-wrapper:hover .home2-product-wrapper-overlay {
+    background: rgba(236,236,236,.9);
+}
+p.slider_btn:hover {
+    color: #fff !important;
+}
